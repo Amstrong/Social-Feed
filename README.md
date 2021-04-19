@@ -2,11 +2,11 @@
 
 ## Installation
 
-Open your terminal and type in
+Open your terminal and type in:
 
 ```sh
 $ git clone https://github.com/Amstrong/Social-Feed.git
-$ cd social-feed
+$ cd Social-Feed
 $ yarn install
 
 $ run: yarn run start

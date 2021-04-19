@@ -4,6 +4,7 @@ import { createBrowserHistory } from 'history';
 import Home from './views/Home/home';
 import Configuration from './views/Configuration/configuration';
 import GlobalStyles from './globalStyles';
+import NotFound from './components/NotFound/NotFound'
 const history = createBrowserHistory();
 function App() {
    return (
@@ -13,6 +14,7 @@ function App() {
             <Switch>
                <Route exact path="/" component={Home} />
                <Route exact path="/configuration" component={Configuration} />
+               <Route component={NotFound} />
             </Switch>
          </BrowserRouter>
       </>

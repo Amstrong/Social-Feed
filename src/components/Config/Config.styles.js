@@ -10,8 +10,8 @@ export const Container = styled.div`
    flex-direction: column;
    box-shadow: 0px 1.46202px 21.9303px rgba(0, 0, 0, 0.1), 0px 2.92404px 7.31009px rgba(0, 0, 0, 0.1);
    @media (max-width: 1024px) {
-      margin-left: 70px;   
-      }
+      margin-left: 70px;
+   }
 `;
 export const Input = styled.input`
    border: none;

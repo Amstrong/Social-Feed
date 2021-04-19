@@ -1,8 +1,8 @@
 import React from 'react';
-import Tidal from '../../assets/images/Tidal.png';
-import Girl from '../../assets/images/girl.jpg';
-import Button from '../BigButton/BigButton';
-import SmallButton from '../SmallButton/SmallButton';
+import Tidal from '../../../assets/images/Tidal.png';
+import Girl from '../../../assets/images/girl.jpg';
+import Button from '../../BigButton/BigButton';
+import SmallButton from '../../SmallButton/SmallButton';
 import { Section, Information, Title, Subtitle, Soft, Logo, Image, Shadow, BtnContainer } from './Header.styles';
 export default function Header() {
    return (

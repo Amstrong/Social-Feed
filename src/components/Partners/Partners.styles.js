@@ -8,7 +8,7 @@ export const Container = styled.div`
    justify-content: space-between;
    @media (max-width: 1024px) {
       display: none;
-      }
+   }
 `;
 
 export const Img = styled.img``;

@@ -1,7 +1,7 @@
 import React from 'react';
-import Logo from '../../assets/images/TidalMobile.png';
-import Girl from '../../assets/images/girl.jpg';
-import SmallButton from '../../components/SmallButton/SmallButton';
+import Logo from '../../../assets/images/TidalMobile.png';
+import Girl from '../../../assets/images/girl.jpg';
+import SmallButton from '../../SmallButton/SmallButton';
 import { LogoContainer, Img, ImageCont, Title, Text, Learn, Information, Btn } from './HeaderMobile.styles';
 export default function HeaderMobile() {
    return (

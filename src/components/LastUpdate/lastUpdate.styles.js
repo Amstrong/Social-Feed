@@ -10,7 +10,7 @@ export const Container = styled.div`
       flex-direction: column-reverse;
       align-items: center;
       justify-content: center;
-      margin-bottom:-3px;
+      margin-bottom: -3px;
    }
 `;
 export const DateContainer = styled.div`
@@ -20,8 +20,8 @@ export const DateContainer = styled.div`
    font-weight: 700;
    border: 2px solid white;
    @media (max-width: 1024px) {
-      text-align:center;
-      padding:15px;
+      text-align: center;
+      padding: 15px;
    }
 
    margin-right: 15px;

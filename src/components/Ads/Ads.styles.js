@@ -10,7 +10,7 @@ export const Section = styled.div`
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      }
+   }
 `;
 
 export const Information = styled.div`
@@ -20,7 +20,7 @@ export const Information = styled.div`
    @media (max-width: 1024px) {
       text-align: center;
       padding: 0 1rem 3rem 1rem;
-      }
+   }
 `;
 
 export const Img = styled.img`
@@ -37,7 +37,7 @@ export const Title = styled.h1`
    @media (max-width: 1024px) {
       text-align: center;
       font-size: 2.5em;
-      }
+   }
 `;
 export const Parragraph = styled.p`
    font-size: 1em;
@@ -49,7 +49,7 @@ export const Soft = styled.span`
    font-weight: 300;
    @media (max-width: 1024px) {
       text-align: center;
-      }
+   }
 `;
 export const Br = styled.br`
    line-height: 1rem;

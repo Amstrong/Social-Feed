@@ -8,7 +8,7 @@ export const Container = styled.div`
       display: grid;
       grid-template-rows: 1.2fr 1fr;
       margin-bottom: 2rem;
-      }
+   }
 `;
 export const Find = styled.div`
    background-color: #6424ff;
@@ -20,7 +20,7 @@ export const Find = styled.div`
    text-align: center;
    @media (max-width: 1024px) {
       font-size: 1.2em;
-      }
+   }
 `;
 export const ContBtn = styled.div`
    display: flex;
@@ -29,5 +29,5 @@ export const ContBtn = styled.div`
    @media (max-width: 1024px) {
       margin-top: -10px;
       background-color: #6424ff;
-      }
+   }
 `;

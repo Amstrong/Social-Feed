@@ -8,7 +8,7 @@ export const Information = styled.div`
    background: #6424ff;
    padding: 0 5rem 8rem 5rem;
    display: flex;
-   flex-direction: column; 
+   flex-direction: column;
    @media (max-width: 1024px) {
       padding: 0 5rem 8rem 2rem;
    }

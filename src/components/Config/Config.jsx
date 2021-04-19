@@ -25,7 +25,6 @@ export default function Config() {
          if (validation(Number(e.target.value))) {
             dispatch(actions.limit(e.target.value));
          } else {
-            console.log(validation(e.target.value));
             setError(true);
          }
       }

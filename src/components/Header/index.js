@@ -12,7 +12,6 @@ const verifyEqual = (dimension, size) => {
 
 export default function index() {
    const windowSize = useWindowSize();
-   console.log(windowSize.width);
    const mobile = verifyEqual(1024, windowSize.width);
 
    return <>{mobile ? <HeaderMobile /> : <Header />}</>;

@@ -26,7 +26,6 @@ export default function usePosts() {
       if (lastID === null) {
          getData();
       } else {
-         console.log('ya entra aqui');
          const intervalID = setInterval(getData, interval);
          return () => clearInterval(intervalID);
       }

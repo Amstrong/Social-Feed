@@ -9,8 +9,8 @@ $ git clone https://github.com/Amstrong/Social-Feed.git
 $ cd Social-Feed
 $ yarn install
 
-$ run: yarn run start
-$ test: yarn run test
+$ run: yarn start
+$ test: yarn test
 ```
 
 ## Scaffolding

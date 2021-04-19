@@ -24,9 +24,6 @@ Social-Feed
 │   ├── actions
 │   |   ├── postActions.test
 │   |   └── postActions.js
-│   ├── actions
-│   |   ├── postActions.test
-│   |   └── postActions.js
 │   ├── components
 │   │   ├── Ads
 │   │   │   ├── Ads.jsx

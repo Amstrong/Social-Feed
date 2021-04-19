@@ -1,8 +1,8 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 export const Container = styled.div`
-width: 100%;
-height:100%;
-background-color: #FAF9FC;
-display: grid;
-place-items: center;
-`
+   background-color: #faf9fc;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-left: 20px;
+`;

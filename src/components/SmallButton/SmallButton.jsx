@@ -1,11 +1,14 @@
-import React from 'react'
-import {Btn, Text} from "./SmallButton.styles"
-export default function SmallButton({handleClick,text}) {
-        return (
-            <Btn primary onCLick={handleClick}>
-                <Text>{text}</Text>
-            </Btn>
-        )
-    }
-    
+import React from 'react';
+import { Btn, Text } from './SmallButton.styles';
+import PropTypes from 'prop-types';
+export default function SmallButton({ text }) {
+   return (
+      <Btn primary>
+         <Text>{text}</Text>
+      </Btn>
+   );
+}
 
+SmallButton.propTypes = {
+   text: PropTypes.string.isRequired,
+};

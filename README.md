@@ -49,7 +49,7 @@ Social-Feed
 │   │   │   │    └── Header.stylesjsx
 │   │   |   ├── Mobile
 │   │   │   │    ├── HeaderMobile.jsx
-│   │   │   │    └── HeaderMobile.stylesjsx
+│   │   │   │    └── HeaderMobile.stylesjs
 │   │   │   ├── index.js
 │   │   │   └── useWindowSize.js
 │   │   ├── LastUpdate

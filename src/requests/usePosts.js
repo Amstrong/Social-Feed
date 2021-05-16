@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import axios from 'axios';
 import { useSelector, useDispatch } from 'react-redux';
-import * as actions from '../actions/postsActions';
 import { FormatDate } from './FormatDate';
+import { loading, posts, lastId, error, lastUpdate } from '../slices/postSlices';
 
 const refactorPosts = Posts =>
    Posts.map(post => {
@@ -17,10 +17,10 @@ const refactorPosts = Posts =>
 
 export default function usePosts() {
    const dispatch = useDispatch();
-   const feedURL = useSelector(state => state.feedURL);
-   const lastID = useSelector(state => state.lastId);
-   const limit = useSelector(state => state.limit);
-   const interval = useSelector(state => state.interval);
+   const feedURL = useSelector(state => state.post.feedURL);
+   const lastID = useSelector(state => state.post.lastId);
+   const limit = useSelector(state => state.post.limit);
+   const interval = useSelector(state => state.post.interval);
 
    useEffect(() => {
       if (lastID === null) {
@@ -35,16 +35,16 @@ export default function usePosts() {
 
    const getData = async () => {
       try {
-         dispatch(actions.loading(true));
+         dispatch(loading(true));
          const response = await axios.get(`${feedURL}?limit=${limit};&start_id=${lastID}`);
-         dispatch(actions.lastUpdate(FormatDate()));
-         const posts = refactorPosts(response.data);
-         dispatch(actions.loading(false));
-         dispatch(actions.posts(posts));
-         dispatch(actions.lastID(posts[posts.length - 1].id_str));
-      } catch (error) {
-         dispatch(actions.error(true));
-         console.log(error.message);
+         dispatch(lastUpdate(FormatDate()));
+         const postsRef = refactorPosts(response.data);
+         dispatch(loading(false));
+         dispatch(posts(postsRef));
+         dispatch(lastId(postsRef[postsRef.length - 1].id_str));
+      } catch (err) {
+         dispatch(error(true));
+         console.log(err.message);
       }
    };
 }

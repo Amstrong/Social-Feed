@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { Container, DateContainer } from './lastUpdate.styles';
 export default function LastUpdate() {
-   const Date = useSelector(state => state.lastUpdate);
+   const Date = useSelector(state => state.post.lastUpdate);
    return (
       <Container>
          <DateContainer>Last update: {Date}</DateContainer>

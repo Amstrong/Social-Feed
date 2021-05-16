@@ -5,7 +5,7 @@ import usePost from '../../requests/usePosts';
 
 export default function CardLogic() {
    usePost();
-   const Posts = useSelector(state => state.posts);
+   const Posts = useSelector(state => state.post.posts);
    return (
       <>
          {Posts?.map(post => {

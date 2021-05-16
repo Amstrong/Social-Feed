@@ -1,6 +1,6 @@
 # Social Feed
 
-## Installation
+## Install
 
 Open your terminal and type in:
 
@@ -21,9 +21,8 @@ Social-Feed
 |    ├──index.html
 │    └── favicon.ico
 ├── src
-│   ├── actions
-│   |   ├── postActions.test
-│   |   └── postActions.js
+│   ├── app
+│   |   └── store.js
 │   ├── components
 │   │   ├── Ads
 │   │   │   ├── Ads.jsx
@@ -68,14 +67,11 @@ Social-Feed
 │   │   │   ├── SmallButton.jsx
 │   │   │   ├── SmallButton.styles.js
 │   │   │   └── SmallButton.test.js
-│   ├── reducers
-│   │   ├── index.js
-│   │   └── initialState.js
+│   ├── slices
+│   │   └── postSlices.js
 │   ├── requests
 │   │   ├── formDate.js
 │   │   └── usePosts.js
-│   ├── types
-│   │   └── postTypes.js
 │   ├── views
 │   │   ├── configuration
 │   │   │   ├── configuration.jsx
